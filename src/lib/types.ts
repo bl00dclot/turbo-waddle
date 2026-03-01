@@ -1,0 +1,37 @@
+export interface Stop {
+	name: string;
+	desc: string;
+	coords: string;
+	tags: string[];
+}
+
+export interface UrbexSpot {
+	name: string;
+	coords: string;
+	decimal: string;
+}
+
+export interface RouteSection {
+	heading: string;
+	stops: Stop[];
+	urbex: UrbexSpot[];
+}
+
+export interface DayData {
+	title: string;
+	sections: RouteSection[];
+}
+
+export const TAG_CONFIG: Record<string, { bg: string; text: string; icon: string }> = {
+	fortress: { bg: 'bg-amber-100', text: 'text-amber-800', icon: '🏰' },
+	viewpoint: { bg: 'bg-blue-100', text: 'text-blue-800', icon: '👁' },
+	monastery: { bg: 'bg-violet-100', text: 'text-violet-800', icon: '⛪' },
+	village: { bg: 'bg-emerald-100', text: 'text-emerald-800', icon: '🏘' },
+	food: { bg: 'bg-pink-100', text: 'text-pink-800', icon: '🍯' },
+	wine: { bg: 'bg-yellow-200', text: 'text-yellow-900', icon: '🍷' },
+	museum: { bg: 'bg-indigo-100', text: 'text-indigo-800', icon: '🏛' },
+	palace: { bg: 'bg-yellow-100', text: 'text-yellow-800', icon: '👑' },
+	ancient: { bg: 'bg-purple-100', text: 'text-purple-800', icon: '🏚' },
+	nature: { bg: 'bg-green-100', text: 'text-green-800', icon: '🌳' },
+	academy: { bg: 'bg-cyan-100', text: 'text-cyan-800', icon: '📚' }
+};
