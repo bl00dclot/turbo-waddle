@@ -1,4 +1,9 @@
 {
-	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from en!"
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "site_title": "Trip to Sakartvelo",
+  "route_subtitle": "Tbilisi → Gombori Pass → Telavi → Sighnaghi → Tbilisi",
+  "filter_all": "All",
+  "urbex_heading": "Digger / Urbex Locations",
+  "open_map": "Map",
+  "day_label": "Day {number}"
 }
