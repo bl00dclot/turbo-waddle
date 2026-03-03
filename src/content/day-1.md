@@ -2,6 +2,7 @@
 title: "Day 1"
 sections:
   - heading: "Tbilisi → Telavi (via Gombori Pass, ~2 hrs)"
+    distance_km: 136
     stops:
       - name: "Ujarma Fortress"
         desc: "3rd-century royal citadel of King Vakhtang Gorgasali perched above the Iori River gorge. One of the most important fortresses guarding the pass from Kartli into Kakheti. Panoramic views, 10 GEL entry."
@@ -54,6 +55,7 @@ sections:
         coords: "41°55'08.0\"N 45°25'27.6\"E"
         decimal: "41.9189,45.4243"
   - heading: "Telavi → Sighnaghi (~1.5 hrs through vineyard villages)"
+    distance_km: 75
     stops:
       - name: "Tsinandali Estate"
         desc: "19th-century palace of poet Prince Chavchavadze with an 18-hectare European-designed garden and historic winery."

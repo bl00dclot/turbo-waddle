@@ -27,7 +27,12 @@
 
 	{#each filteredSections as section (section.heading)}
 		<div class="space-y-4">
-			<h2 class="text-xl font-semibold text-gray-900">🛣 {section.heading}</h2>
+			<h2 class="text-xl font-semibold text-gray-900">
+				🛣 {section.heading}
+				{#if section.distance_km}
+					<span class="ml-2 text-sm font-normal text-gray-500">· {section.distance_km} km</span>
+				{/if}
+			</h2>
 
 			{#if section.filteredStops.length > 0}
 				<div class="space-y-3">

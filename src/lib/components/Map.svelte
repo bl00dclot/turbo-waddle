@@ -64,6 +64,25 @@
 					marker.addTo(markerLayer);
 					bounds.push(latlng);
 				}
+
+				for (const spot of section.urbex) {
+					const parts = spot.decimal.split(',').map((s) => parseFloat(s.trim()));
+					if (parts.length < 2 || isNaN(parts[0]) || isNaN(parts[1])) continue;
+
+					const latlng: L.LatLngExpression = [parts[0], parts[1]];
+
+					const marker = Leaf.circleMarker(latlng, {
+						radius: 6,
+						fillColor: '#000000',
+						color: '#fff',
+						weight: 2,
+						fillOpacity: 0.9
+					});
+
+					marker.bindPopup(`<strong>URBEX: ${spot.name}</strong>`);
+					marker.addTo(markerLayer);
+					bounds.push(latlng);
+				}
 			}
 		}
 
@@ -72,23 +91,30 @@
 		}
 	}
 
-	onMount(async () => {
-		const Leaf = await import('leaflet');
-		await import('leaflet/dist/leaflet.css');
+	onMount(() => {
+		let mounted = true;
 
-		leafletModule = Leaf.default ?? Leaf;
+		(async () => {
+			const Leaf = await import('leaflet');
+			await import('leaflet/dist/leaflet.css');
 
-		map = leafletModule.map(mapContainer).setView([41.75, 45.4], 9);
-		leafletModule
-			.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution: '&copy; OpenStreetMap contributors'
-			})
-			.addTo(map);
+			if (!mounted) return;
 
-		markerLayer = leafletModule.layerGroup().addTo(map);
-		updateMarkers(leafletModule);
+			leafletModule = Leaf.default ?? Leaf;
+
+			map = leafletModule.map(mapContainer).setView([41.75, 45.4], 9);
+			leafletModule
+				.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+					attribution: '&copy; OpenStreetMap contributors'
+				})
+				.addTo(map);
+
+			markerLayer = leafletModule.layerGroup().addTo(map);
+			updateMarkers(leafletModule);
+		})();
 
 		return () => {
+			mounted = false;
 			map?.remove();
 		};
 	});
