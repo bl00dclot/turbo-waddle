@@ -21,7 +21,18 @@
 		palace: '#854d0e',
 		ancient: '#6b21a8',
 		nature: '#166534',
-		academy: '#155e75'
+		academy: '#155e75',
+		soviet: '#4b5563',
+		sculpture: '#9d174d',
+		bakery: '#c2410c',
+		racetrack: '#1e40af',
+		offroad: '#3f3f46',
+		winery: '#92400e',
+		spa: '#075985',
+		art: '#92400e',
+		mosque: '#166534',
+		observatory: '#312e81',
+		architecture: '#9d174d'
 	};
 
 	let mapContainer: HTMLDivElement;
