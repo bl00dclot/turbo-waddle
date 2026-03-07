@@ -17,12 +17,17 @@
 </script>
 
 <div class="space-y-6">
-	<div class="flex justify-center">
+	<div class="flex flex-col items-center gap-1">
 		<span
 			class="bg-gradient-to-r from-indigo-700 to-indigo-500 text-white font-bold text-sm px-4 py-1.5 rounded-full uppercase tracking-wide"
 		>
 			{day.title}
 		</span>
+		{#if day.daily_driving}
+			<span class="text-sm text-gray-500">
+				{day.daily_driving.total_km} km total · {day.daily_driving.total_time} driving
+			</span>
+		{/if}
 	</div>
 
 	{#each filteredSections as section (section.heading)}
@@ -30,7 +35,7 @@
 			<h2 class="text-xl font-semibold text-gray-900">
 				🛣 {section.heading}
 				{#if section.distance_km}
-					<span class="ml-2 text-sm font-normal text-gray-500">· {section.distance_km} km</span>
+					<span class="ml-2 text-sm font-normal text-gray-500">· {section.distance_km} km · {section.drive_time}</span>
 				{/if}
 			</h2>
 

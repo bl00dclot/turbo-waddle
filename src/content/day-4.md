@@ -1,129 +1,79 @@
 ---
 title: "Day 4"
+daily_driving:
+  total_km: 257
+  total_time: "~4.5 hrs"
 sections:
-  - heading: "Kutaisi → Nokalakevi (via Tskaltubo & Monument Route, ~2 hrs)"
+  - heading: "Akhaltsikhe → Abastumani"
+    distance_km: 27
+    drive_time: "~45 min"
     stops:
-      - name: "Tskaltubo Abandoned Sanatoriums"
-        desc: "Former USSR premier spa resort, 15km from Kutaisi. 22 grand neoclassical sanatoriums built in the 1920s-1950s around radon-rich thermal waters. Stalin had a private bathhouse (No. 6). Most buildings now abandoned or housing Abkhazian refugees. Key sanatoriums: Medea (dramatic staircases), Metalurgi (round lobby), Iveria, Shakhtiori. Three functioning spas remain. Marshrutka #30 from Red Bridge, 2 GEL."
-        coords: "42.3402,42.5953"
+      - name: "Sapara Monastery"
+        desc: "10th-century monastery complex 10km from Akhaltsikhe center, hidden in a forested gorge. Beautiful medieval frescoes and remote atmospheric setting. Short detour off the Abastumani road."
+        coords: "41.6777,43.0300"
         tags:
-          - soviet
-          - spa
-      - name: "Kolkhida Bas-Relief, Kutaisi Green Market"
-        desc: "Soviet-era bas-relief by Bernard Nebieridze (1980-85) at the main entrance of Kutaisi Green Market. Depicts scenes from the ancient Colchis Kingdom including Medea, the Argonauts, and the Golden Fleece. Distinctive rust-orange hue."
-        coords: "42.2688,42.7046"
-        tags:
-          - soviet
-          - art
-      - name: "Abasha Mosaics & WWII Memorial"
-        desc: "First stop on the \"Monument Route\" (E97 highway to Zugdidi). Look for Soviet mosaic panels on buildings and a WWII memorial plinth with relief sculptures."
-        coords: "42.2000,42.2000"
-        tags:
-          - soviet
-          - art
-      - name: "Sujuna Synagogue & Village"
-        desc: "Archetypical Megrelian village with ornate wooden oda houses on spacious lots. 19th-century synagogue from the era when Jewish, Turkish and Laz merchants traded along the Rioni River. Former cargo port with connections to the Colchian King Aeetes. 20-min detour from highway."
-        coords: "42.2056,42.1917"
+          - monastery
+          - ancient
+      - name: "Abastumani Town Walk"
+        desc: "Former imperial-era resort town with remarkable wooden fretwork houses — some beautifully restored, many in atmospheric decay. The town was a tuberculosis treatment center for Russian nobles. Wander the main street for the architecture. Car-free and quiet."
+        coords: "41.7544,42.8267"
         tags:
           - village
           - architecture
-      - name: "Senaki Theatre & Mosaics"
-        desc: "Baby-blue Baroque Revival theatre designed by Vakhtang Gogoladze in 1959, inspired by the Hermitage Museum. Stunning interior ceiling paintings. Nearby: Art School with arched facade, five-storey building with detailed Soviet mosaic panel depicting Gurian horsemen and tea pickers, and Georgia's first motor car (1901) in a perspex box by the railway station."
-        coords: "42.2679,42.0686"
-        tags:
-          - soviet
-          - art
-          - museum
-      - name: "Bandza Synagogue"
-        desc: "Early 20th-century synagogue in the Jewish district of Bandza village. No longer active but holds Cultural Heritage Monument status. Most Jews emigrated to Israel. Jewish cemetery nearby. Quick stop between Senaki and Nokalakevi."
-        coords: "42.3100,42.1200"
-        tags:
-          - architecture
-      - name: "Nokalakevi Fortress (Archaeopolis)"
-        desc: "Restored Byzantine fortress and open-air archaeological museum on the site of the ancient Colchian capital. Massive walls with lookout points over the Tekhuri River gorge. Underground tunnel passages, medieval church, and interactive exhibits. Location is phenomenally beautiful on a river crook. Limited signage — explore freely. Former seat of the Colchian ruler Kuji."
-        coords: "42.3492,42.1558"
-        tags:
-          - fortress
-          - ancient
-          - museum
-      - name: "Nokalakevi Sulfur Hot Springs"
-        desc: "Surreal hot waterfall with steam rising above the treetops. Natural thermal pools where hot sulfur water cascades down and mixes with cold river water below, creating perfect bathing temperature. Two stone bath huts. Wild drive down the mountain to reach it. Bring a swimsuit. Free and unforgettable."
-        coords: "42.3450,42.1600"
-        tags:
-          - spa
-          - nature
-    urbex:
-      - name: "Tskaltubo - Sanatorium Medea"
-        coords: "42°20'38\"N 42°35'33\"E"
-        decimal: "42.3439,42.5925"
-      - name: "Tskaltubo - Sanatorium Iveria"
-        coords: "42°20'15\"N 42°35'52\"E"
-        decimal: "42.3375,42.5978"
-      - name: "Tskaltubo - Sanatorium Shakhtiori"
-        coords: "42°20'25\"N 42°35'45\"E"
-        decimal: "42.3403,42.5958"
-      - name: "Tskaltubo - Abandoned Railway Station"
-        coords: "42°20'10\"N 42°36'00\"E"
-        decimal: "42.3361,42.6000"
-      - name: "Senaki Air Base (view from road only)"
-        coords: "42°16'00\"N 42°04'00\"E"
-        decimal: "42.2667,42.0667"
-  - heading: "Nokalakevi → Zugdidi (~40 min)"
-    stops:
-      - name: "Rukhi Castle"
-        desc: "Tumbledown medieval fortress covered in vines near the village of Chkhoria, just off the Mestia road north of Zugdidi. Strategic viewpoint overlooking the border into breakaway Abkhazia. Atmospheric and rarely visited."
-        coords: "42.5656,41.8800"
-        tags:
-          - fortress
-      - name: "Dadiani Palace & Botanical Garden, Zugdidi"
-        desc: "Elegant 19th-century palace of the Dadiani princes, rulers of Mingrelia. Houses a museum with an eclectic collection including one of Napoleon's death masks. Surrounded by a beautiful botanical garden with over 100 species. 7 GEL entry. The cultural heart of Samegrelo region."
-        coords: "42.5089,41.8712"
+      - name: "Romanov Palace Ruins, Abastumani"
+        desc: "Two buildings — winter and summer mansions built for Grand Duke Georgy (brother of Nicholas II) who came to treat tuberculosis and died here in 1899. Part converted to St. Panteleimon nunnery in the 1990s. Territory closed off but easy to access. No information plaques — pure abandoned exploration."
+        coords: "41.7567,42.8222"
         tags:
           - palace
-          - museum
-          - nature
-      - name: "Zugdidi Market & Mingrelian Food"
-        desc: "Sample authentic Mingrelian cuisine — the spiciest regional cooking in Georgia. Try gebzhalia (cheese in mint sauce), elarji (cornmeal with sulguni), and kupati sausages. The bazaar is the best place to stock up on supplies before heading into Svaneti."
-        coords: "42.5100,41.8680"
+          - ancient
+      - name: "Abastumani Sulfur Baths"
+        desc: "Natural thermal sulfur springs used since the 19th century when Russian nobles came for treatment. Several bathhouses in town, some renovated, some delightfully decrepit."
+        coords: "41.7530,42.8280"
+        tags:
+          - spa
+      - name: "Abastumani Astrophysical Observatory"
+        desc: "First mountain-top observatory in the Soviet Union, established in the 1930s. 5km above town via cable car or road. Telescopes include a 125cm reflector and 70cm meniscus. New Austrian telescope installed 2024. Evening stargazing tours available on clear nights. Surrounded by pine forests at ~1,600m altitude."
+        coords: "41.7528,42.8194"
+        tags:
+          - observatory
+          - soviet
+          - viewpoint
+      - name: "Sakalmakhe Trout Restaurant"
+        desc: "Rustic trout house on the Baratkhevi River, 10 min north of center. Wooden pavilions by a small lake, grilled fresh trout and excellent mtsvadi BBQ. Beyond the restaurant the dirt road begins climbing toward Zekari Pass."
+        coords: "41.7640,42.8180"
         tags:
           - food
     urbex:
-      - name: "Zugdidi Abandoned UAZ Ambulances (Wander-Lush location)"
-        coords: "42°30'30\"N 41°52'00\"E"
-        decimal: "42.5083,41.8667"
-  - heading: "Zugdidi → Mestia (via Enguri Dam, ~3.5 hrs)"
+      - name: "Romanov Summer Palace (abandoned)"
+        coords: "41°45'24\"N 42°49'20\"E"
+        decimal: "41.7567,42.8222"
+      - name: "Abastumani Abandoned Sanatoriums"
+        coords: "41°45'15\"N 42°49'35\"E"
+        decimal: "41.7542,42.8264"
+  - heading: "Abastumani → Kutaisi via Highway (April route via Khashuri & E60)"
+    distance_km: 230
+    drive_time: "~3.5 hrs"
     stops:
-      - name: "Enguri Dam"
-        desc: "World's second-highest concrete arch dam at 271.5m (891 ft), built in Soviet era on the Enguri River near Jvari town. Powers 40% of Georgia's electricity, shared with breakaway Abkhazia. New tourism infrastructure with tour programs. Walk freely along the reservoir. Dramatic gorge setting. Worth 1-1.5 hours. 8km after Jvari, take the left turn."
-        coords: "43.0167,42.0333"
+      - name: "Zekari Pass (2,174m)"
+        desc: "High mountain pass on the border of Imereti and Samtskhe-Javakheti, used since ancient times for caravan traffic. Spectacular Greater Caucasus views on clear days. Alpine meadows with shepherds, fresh dairy, and camping spots. 4WD with high clearance required — dirt/gravel road. Summer only (June-September). APRIL: Pass is snow-covered and CLOSED. Opens late May/June. Use the highway route instead."
+        coords: "41.8350,42.7650"
         tags:
-          - soviet
           - viewpoint
-      - name: "Jikha Tower, Jvari"
-        desc: "The first koshki (Svan defensive tower-dwelling) you encounter on the road to Svaneti. Located in the town of Jvari near the Enguri Dam turnoff. A preview of what awaits in Mestia."
-        coords: "42.7200,42.0500"
+          - offroad
+      - name: "Sairme Resort"
+        desc: "Mountain mineral water resort at 951m elevation in forested Bagdati District. Numbered concrete buvettes along the Bostania river each dispensing different healing mineral waters. Two hotels with thermal pools. Much quieter and more beautiful than Borjomi. Soviet sanatorium converted to modern hotel. Summer route detour only — not on the April highway route."
+        coords: "41.9348,42.7752"
         tags:
-          - fortress
-      - name: "Delpak Waterfall"
-        desc: "Accessible waterfall just off the Zugdidi-Mestia highway. Quick stop for photos as the road climbs into the Svaneti mountains along the raging Enguri River gorge."
-        coords: "42.8800,42.3300"
-        tags:
+          - spa
           - nature
-      - name: "Idliani Wooden Bridge"
-        desc: "Rickety wooden suspension bridge crossing the river to the tiny village of Idliani. Photogenic and slightly terrifying. One of the atmospheric stops on the dramatic mountain road to Mestia."
-        coords: "42.9200,42.5000"
+      - name: "Baghdati (Mayakovsky Museum)"
+        desc: "Small Imeretian town en route to Kutaisi. Birthplace of Russian futurist poet Vladimir Mayakovsky — his house is now a museum. Also gateway to Sagoria Forest (\"the king's forest\") with Caesar's mushroom foraging in autumn and ruins of Geguti Royal Palace across the river."
+        coords: "42.0916,42.8228"
         tags:
-          - viewpoint
-      - name: "Mestia"
-        desc: "Administrative center of Upper Svaneti at 1,500m, surrounded by Caucasus peaks. Famous for its cluster of medieval koshki (stone defense towers, youngest 700 years old, ~135 surviving). Visit the Svaneti Museum of History and Ethnography (7 GEL), Margiani House Museum in a Svan tower (5 GEL), and ride the Hatsvali cable car (10 GEL) for panoramic views. Gateway to Ushguli, Koruldi Lakes, and Chalaadi Glacier hikes."
-        coords: "43.0078,42.7275"
-        tags:
-          - village
-          - fortress
           - museum
-          - viewpoint
+          - village
     urbex:
-      - name: "Soviet-era Structures along Enguri Gorge Road"
-        coords: "42°54'00\"N 42°20'00\"E"
-        decimal: "42.9000,42.3333"
+      - name: "Sairme Soviet Sanatorium Ruins"
+        coords: "41°56'00\"N 42°46'30\"E"
+        decimal: "41.9333,42.7750"
 ---

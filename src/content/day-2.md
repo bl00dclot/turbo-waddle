@@ -1,8 +1,12 @@
 ---
 title: "Day 2"
+daily_driving:
+  total_km: 160
+  total_time: "~2.5 hrs (300 km / ~6 hrs with Gareja)"
 sections:
-  - heading: "Sighnaghi → Sagarejo (via Kakheti Highway, ~1 hr)"
-    distance_km: 105
+  - heading: "Sighnaghi → Sagarejo (via Kakheti Highway)"
+    distance_km: 65
+    drive_time: "~1 hr"
     stops:
       - name: "Peace Sculpture by Nugzar Manjaparashvili"
         desc: "Monumental 1970s Soviet-era concrete sculpture on a plateau near the Gate of Kiziqi. Depicts mothers of war heroes supplicating for peace. Damaged but deeply impressive. Short walk from the road, picnic area nearby."
@@ -49,7 +53,8 @@ sections:
         coords: "41°27'57.6\"N 45°25'16.6\"E"
         decimal: "41.4660,45.4213"
   - heading: "Detour: David Gareja & Rainbow Mountains (optional, +3-4 hrs)"
-    distance_km: 225
+    distance_km: 140
+    drive_time: "~3.5 hrs round-trip"
     stops:
       - name: "Mravaltskaro Rainbow Mountains"
         desc: "Multicolored sedimentary hills in reds, yellows, greens and purples near Mravaltskaro Reservoir. 4WD recommended. Surreal Mars-like landscape, excellent photography. 2-4km hike from parking. Also great for birdwatching (herons, eagles, falcons)."
@@ -73,8 +78,9 @@ sections:
       - name: "Udabno Village (abandoned Soviet settlement)"
         coords: "41°30'10.8\"N 45°22'52.1\"E"
         decimal: "41.5030,45.3811"
-  - heading: "Sagarejo → Tbilisi via Rustavi (~1.5 hrs)"
-    distance_km: 115
+  - heading: "Sagarejo → Tbilisi via Rustavi"
+    distance_km: 95
+    drive_time: "~1.5 hrs"
     stops:
       - name: "Sartichala Sunflower Fields"
         desc: "Seasonal large-scale sunflower fields on the Kakheti Highway before Sagarejo. Used for cold-pressed Kakhetian sunflower oil. Best in late summer. Depends on what farmers plant that year."

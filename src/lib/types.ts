@@ -13,13 +13,20 @@ export interface UrbexSpot {
 
 export interface RouteSection {
 	heading: string;
-	distance_km?: number;
+	distance_km: number;
+	drive_time: string;
 	stops: Stop[];
 	urbex: UrbexSpot[];
 }
 
+export interface DailyDriving {
+	total_km: number;
+	total_time: string;
+}
+
 export interface DayData {
 	title: string;
+	daily_driving: DailyDriving;
 	sections: RouteSection[];
 }
 
