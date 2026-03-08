@@ -1,10 +1,8 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import type { DayData } from '$lib/types';
 	import DaySection from './DaySection.svelte';
-	import { gsap } from 'gsap';
-	import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-
-	gsap.registerPlugin(ScrollToPlugin);
+	import type { default as GsapType } from 'gsap';
 
 	let { days, activeTags }: { days: DayData[]; activeTags: Set<string> } = $props();
 
@@ -12,23 +10,41 @@
 	let scrollContainer: HTMLDivElement | undefined = $state();
 	let dayPanels: HTMLDivElement[] = $state([]);
 	let dotElements: HTMLSpanElement[] = $state([]);
+	let gsapInstance: typeof GsapType | undefined = $state();
+
+	// Load GSAP only in the browser
+	$effect(() => {
+		if (!browser) return;
+		Promise.all([import('gsap'), import('gsap/ScrollToPlugin')]).then(
+			([{ gsap }, { ScrollToPlugin }]) => {
+				gsap.registerPlugin(ScrollToPlugin);
+				gsapInstance = gsap;
+			}
+		);
+	});
 
 	function scrollToDay(index: number) {
 		if (!scrollContainer) return;
 		const panel = dayPanels[index];
 		if (!panel) return;
-		gsap.to(scrollContainer, {
-			scrollTo: { x: panel },
-			duration: 0.4,
-			ease: 'power2.out'
-		});
+		if (gsapInstance) {
+			gsapInstance.to(scrollContainer, {
+				scrollTo: { x: panel },
+				duration: 0.4,
+				ease: 'power2.out'
+			});
+		} else {
+			panel.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+		}
 	}
 
 	$effect(() => {
 		const current = activeDay;
+		const gs = gsapInstance;
+		if (!gs) return;
 		dotElements.forEach((dot, i) => {
 			if (!dot) return;
-			gsap.to(dot, {
+			gs.to(dot, {
 				scale: i === current ? 1.3 : 1,
 				duration: 0.25,
 				ease: 'back.out(2)'
