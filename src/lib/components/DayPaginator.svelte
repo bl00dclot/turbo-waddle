@@ -1,19 +1,40 @@
 <script lang="ts">
 	import type { DayData } from '$lib/types';
 	import DaySection from './DaySection.svelte';
+	import { gsap } from 'gsap';
+	import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+
+	gsap.registerPlugin(ScrollToPlugin);
 
 	let { days, activeTags }: { days: DayData[]; activeTags: Set<string> } = $props();
 
 	let activeDay = $state(0);
 	let scrollContainer: HTMLDivElement | undefined = $state();
 	let dayPanels: HTMLDivElement[] = $state([]);
+	let dotElements: HTMLSpanElement[] = $state([]);
 
 	function scrollToDay(index: number) {
+		if (!scrollContainer) return;
 		const panel = dayPanels[index];
-		if (panel) {
-			panel.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-		}
+		if (!panel) return;
+		gsap.to(scrollContainer, {
+			scrollTo: { x: panel },
+			duration: 0.4,
+			ease: 'power2.out'
+		});
 	}
+
+	$effect(() => {
+		const current = activeDay;
+		dotElements.forEach((dot, i) => {
+			if (!dot) return;
+			gsap.to(dot, {
+				scale: i === current ? 1.3 : 1,
+				duration: 0.25,
+				ease: 'back.out(2)'
+			});
+		});
+	});
 
 	$effect(() => {
 		const container = scrollContainer;
@@ -58,6 +79,7 @@
 			aria-current={activeDay === i ? 'step' : undefined}
 		>
 			<span
+				bind:this={dotElements[i]}
 				class="rounded-full transition-all {activeDay === i
 					? 'h-3 w-3 bg-indigo-500'
 					: 'h-2 w-2 bg-gray-300'}"
