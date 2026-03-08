@@ -3,7 +3,7 @@
 	import RouteHeader from '$lib/components/RouteHeader.svelte';
 	import Map from '$lib/components/Map.svelte';
 	import TagFilter from '$lib/components/TagFilter.svelte';
-	import DaySection from '$lib/components/DaySection.svelte';
+	import DayPaginator from '$lib/components/DayPaginator.svelte';
 	import FuelSettings from '$lib/components/FuelSettings.svelte';
 	import { loadFuelConfig } from '$lib/fuel-config.svelte';
 
@@ -35,9 +35,7 @@
 		<Map days={data.days} {activeTags} />
 	</div>
 
-	{#each data.days as day (day.title)}
-		<DaySection {day} {activeTags} />
-	{/each}
+	<DayPaginator days={data.days} {activeTags} />
 </div>
 
 <FuelSettings />
