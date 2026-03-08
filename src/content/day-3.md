@@ -7,6 +7,7 @@ sections:
   - heading: "Tbilisi → Gori → Borjomi"
     distance_km: 170
     drive_time: "~2.5 hrs"
+    elevation_gain_m: 500
     stops:
       - name: "Surami Fortress"
         desc: "11th-12th century fortress perched on a rocky cliff above the Suramula River. Controlled the strategic roads to the Likhi Range and Borjomi Gorge. Connected to the legend of Zurab, sacrificed inside the walls to make them stand. Panoramic views from the upper tier. Free entry."
@@ -24,6 +25,7 @@ sections:
   - heading: "Borjomi"
     distance_km: 5
     drive_time: "~15 min between stops"
+    elevation_gain_m: 50
     stops:
       - name: "Borjomi Central Park & Catherine Spring"
         desc: "Pay 2 GEL to enter, walk straight to the blue dome where ladies pour the famous unfiltered Borjomi mineral water — salty and strong. The park has walkways, food kiosks, a Soviet-era cable car (15 GEL one-way) to the plateau with Ferris wheel. Walk 2.8km further to the Tsar Sulfur Pools (three natural hot pools, 15 GEL)."
@@ -78,6 +80,7 @@ sections:
   - heading: "Borjomi → Akhaltsikhe"
     distance_km: 50
     drive_time: "~1 hr"
+    elevation_gain_m: 400
     stops:
       - name: "Rabati Fortress (Akhaltsikhe Castle)"
         desc: "9th-century fortress massively restored in 2012. Lower level has shops, cafes, restaurant and hotel. Upper level has the 18th-century Akhmediye Mosque, 19th-century Orthodox church, Djakeli palace, and the Samtskhe-Javakheti History Museum (6 GEL) covering Neolithic through Ottoman periods. Multi-cultural complex — Ottoman, Persian, Georgian, Jewish layers. 20 GEL combined entry."

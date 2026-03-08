@@ -4,8 +4,14 @@
 	import Map from '$lib/components/Map.svelte';
 	import TagFilter from '$lib/components/TagFilter.svelte';
 	import DaySection from '$lib/components/DaySection.svelte';
+	import FuelSettings from '$lib/components/FuelSettings.svelte';
+	import { loadFuelConfig } from '$lib/fuel-config.svelte';
 
 	let { data } = $props();
+
+	$effect(() => {
+		loadFuelConfig();
+	});
 
 	let activeTags = $state(new SvelteSet<string>());
 
@@ -33,3 +39,5 @@
 		<DaySection {day} {activeTags} />
 	{/each}
 </div>
+
+<FuelSettings />

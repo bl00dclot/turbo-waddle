@@ -7,6 +7,7 @@ sections:
   - heading: "Akhaltsikhe → Abastumani"
     distance_km: 27
     drive_time: "~45 min"
+    elevation_gain_m: 600
     stops:
       - name: "Sapara Monastery"
         desc: "10th-century monastery complex 10km from Akhaltsikhe center, hidden in a forested gorge. Beautiful medieval frescoes and remote atmospheric setting. Short detour off the Abastumani road."
@@ -53,6 +54,7 @@ sections:
   - heading: "Abastumani → Kutaisi via Highway (April route via Khashuri & E60)"
     distance_km: 230
     drive_time: "~3.5 hrs"
+    elevation_gain_m: 200
     stops:
       - name: "Zekari Pass (2,174m)"
         desc: "High mountain pass on the border of Imereti and Samtskhe-Javakheti, used since ancient times for caravan traffic. Spectacular Greater Caucasus views on clear days. Alpine meadows with shepherds, fresh dairy, and camping spots. 4WD with high clearance required — dirt/gravel road. Summer only (June-September). APRIL: Pass is snow-covered and CLOSED. Opens late May/June. Use the highway route instead."

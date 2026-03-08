@@ -7,6 +7,7 @@ sections:
   - heading: "Kutaisi → Nokalakevi (via Tskaltubo & Monument Route)"
     distance_km: 85
     drive_time: "~1.5 hrs"
+    elevation_gain_m: 100
     stops:
       - name: "Tskaltubo Abandoned Sanatoriums"
         desc: "Former USSR premier spa resort, 15km from Kutaisi. 22 grand neoclassical sanatoriums built in the 1920s-1950s around radon-rich thermal waters. Stalin had a private bathhouse (No. 6). Most buildings now abandoned or housing Abkhazian refugees. Key sanatoriums: Medea (dramatic staircases), Metalurgi (round lobby), Iveria, Shakhtiori. Three functioning spas remain. Marshrutka #30 from Red Bridge, 2 GEL."
@@ -76,6 +77,7 @@ sections:
   - heading: "Nokalakevi → Zugdidi"
     distance_km: 45
     drive_time: "~40 min"
+    elevation_gain_m: 50
     stops:
       - name: "Rukhi Castle"
         desc: "Tumbledown medieval fortress covered in vines near the village of Chkhoria, just off the Mestia road north of Zugdidi. Strategic viewpoint overlooking the border into breakaway Abkhazia. Atmospheric and rarely visited."
@@ -101,6 +103,7 @@ sections:
   - heading: "Zugdidi → Mestia (via Enguri Dam)"
     distance_km: 135
     drive_time: "~3.5 hrs"
+    elevation_gain_m: 1400
     stops:
       - name: "Enguri Dam"
         desc: "World's second-highest concrete arch dam at 271.5m (891 ft), built in Soviet era on the Enguri River near Jvari town. Powers 40% of Georgia's electricity, shared with breakaway Abkhazia. New tourism infrastructure with tour programs. Walk freely along the reservoir. Dramatic gorge setting. Worth 1-1.5 hours. 8km after Jvari, take the left turn."

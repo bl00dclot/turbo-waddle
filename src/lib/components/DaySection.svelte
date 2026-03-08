@@ -2,6 +2,8 @@
 	import type { DayData } from '$lib/types';
 	import StopCard from './StopCard.svelte';
 	import UrbexCard from './UrbexCard.svelte';
+	import { fuelConfig } from '$lib/fuel-config.svelte';
+	import { dayFuel, sectionFuel } from '$lib/fuel';
 
 	let { day, activeTags }: { day: DayData; activeTags: Set<string> } = $props();
 
@@ -14,6 +16,8 @@
 					: section.stops.filter((stop) => stop.tags.some((tag) => activeTags.has(tag)))
 		}))
 	);
+
+	let dayFuelEstimate = $derived(dayFuel(day.sections, fuelConfig));
 </script>
 
 <div class="space-y-6">
@@ -25,7 +29,7 @@
 		</span>
 		{#if day.daily_driving}
 			<span class="text-sm text-gray-500">
-				{day.daily_driving.total_km} km total · {day.daily_driving.total_time} driving
+				{day.daily_driving.total_km} km total · {day.daily_driving.total_time} driving · ⛽ ~{dayFuelEstimate.liters.toFixed(1)} L · ~{dayFuelEstimate.cost.toFixed(0)} GEL
 			</span>
 		{/if}
 	</div>
@@ -35,7 +39,8 @@
 			<h2 class="text-xl font-semibold text-gray-900">
 				🛣 {section.heading}
 				{#if section.distance_km}
-					<span class="ml-2 text-sm font-normal text-gray-500">· {section.distance_km} km · {section.drive_time}</span>
+					{@const fuel = sectionFuel(section, fuelConfig)}
+					<span class="ml-2 text-sm font-normal text-gray-500">· {section.distance_km} km · {section.drive_time} · ⛽ {fuel.cost.toFixed(0)} GEL</span>
 				{/if}
 			</h2>
 

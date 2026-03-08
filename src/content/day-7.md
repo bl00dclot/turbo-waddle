@@ -7,6 +7,7 @@ sections:
   - heading: "Mestia → Zugdidi (backtrack)"
     distance_km: 135
     drive_time: "~3.5 hrs"
+    elevation_gain_m: 100
     stops:
       - name: "Enguri Dam (return stop)"
         desc: "World's second-highest concrete arch dam (271.5m). If you didn't stop long enough on Day 5, use the return trip. Walk along the reservoir, dramatic gorge views. In April the reservoir level may be lower, revealing more of the canyon walls."
@@ -24,6 +25,7 @@ sections:
   - heading: "Zugdidi → Tbilisi Airport (via E60 Highway)"
     distance_km: 330
     drive_time: "~5.5 hrs"
+    elevation_gain_m: 300
     stops:
       - name: "Senaki Railway Station & First Car"
         desc: "Quick stop if missed on Day 5: neoclassical station building with Georgia's first motor car (1901, purchased by nobleman Varlam Gvatua) displayed in a perspex box out front."

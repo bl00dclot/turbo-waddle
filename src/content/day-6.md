@@ -7,6 +7,7 @@ sections:
   - heading: "Mestia Morning (before departure)"
     distance_km: 3
     drive_time: "~walking/short drives"
+    elevation_gain_m: 50
     stops:
       - name: "Svaneti Museum of History and Ethnography"
         desc: "Mestia's main museum housing medieval icons, gold and silver religious artifacts that Svans hid during wars, ethnographic displays on tower-dwelling life, and weapons. 7 GEL, closed Mondays. Allow 1-1.5 hrs."
@@ -34,6 +35,7 @@ sections:
   - heading: "Detour: Mestia → Ushguli (CONDITIONAL — check road status locally, ~1.5 hrs if open)"
     distance_km: 47
     drive_time: "~1.5 hrs one-way"
+    elevation_gain_m: 900
     stops:
       - name: "Tower of Love"
         desc: "Iconic Svan tower on the road from Mestia to Ushguli representing a legend of forbidden romance. First major photo stop. If Ushguli road is closed, this may still be accessible as a short drive from Mestia."
@@ -72,6 +74,7 @@ sections:
   - heading: "Afternoon: Mestia Area Hikes"
     distance_km: 10
     drive_time: "~15 min drive + hike"
+    elevation_gain_m: 200
     stops:
       - name: "Chalaadi Glacier Trail"
         desc: "8km round-trip hike from Mestia to the Chalaadi glacier tongue. Cross the Mestiachala River on a suspension bridge, then follow the valley through forest to the glacier moraine. 3-4 hours round trip. APRIL: Lower sections likely accessible but upper trail may have snow and ice. Check conditions locally before setting out."

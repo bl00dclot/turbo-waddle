@@ -15,8 +15,20 @@ export interface RouteSection {
 	heading: string;
 	distance_km: number;
 	drive_time: string;
+	elevation_gain_m?: number;
 	stops: Stop[];
 	urbex: UrbexSpot[];
+}
+
+export interface FuelConfig {
+	pricePerLiter: number;
+	consumptionPer100km: number;
+	elevationPenalty: number;
+}
+
+export interface FuelEstimate {
+	liters: number;
+	cost: number;
 }
 
 export interface DailyDriving {

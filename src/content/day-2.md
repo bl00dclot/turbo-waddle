@@ -7,6 +7,7 @@ sections:
   - heading: "Sighnaghi → Sagarejo (via Kakheti Highway)"
     distance_km: 65
     drive_time: "~1 hr"
+    elevation_gain_m: 100
     stops:
       - name: "Peace Sculpture by Nugzar Manjaparashvili"
         desc: "Monumental 1970s Soviet-era concrete sculpture on a plateau near the Gate of Kiziqi. Depicts mothers of war heroes supplicating for peace. Damaged but deeply impressive. Short walk from the road, picnic area nearby."
@@ -81,6 +82,7 @@ sections:
   - heading: "Sagarejo → Tbilisi via Rustavi"
     distance_km: 95
     drive_time: "~1.5 hrs"
+    elevation_gain_m: 100
     stops:
       - name: "Sartichala Sunflower Fields"
         desc: "Seasonal large-scale sunflower fields on the Kakheti Highway before Sagarejo. Used for cold-pressed Kakhetian sunflower oil. Best in late summer. Depends on what farmers plant that year."
