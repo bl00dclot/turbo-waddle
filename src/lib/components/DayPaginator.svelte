@@ -99,12 +99,11 @@
 <div
 	bind:this={scrollContainer}
 	class="scrollbar-none flex snap-x snap-mandatory overflow-x-auto -mx-4 print:block"
-	style="-webkit-overflow-scrolling: touch; scrollbar-width: none;"
 >
 	{#each days as day, i (day.title)}
 		<div
 			bind:this={dayPanels[i]}
-			class="w-full flex-shrink-0 snap-start px-4 print:w-auto"
+			class="w-full flex-shrink-0 snap-start snap-always px-4 print:w-auto"
 		>
 			<DaySection {day} {activeTags} />
 		</div>
@@ -112,6 +111,9 @@
 </div>
 
 <style>
+	.scrollbar-none {
+		scrollbar-width: none;
+	}
 	.scrollbar-none::-webkit-scrollbar {
 		display: none;
 	}
